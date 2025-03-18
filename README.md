@@ -14,16 +14,26 @@
 - 遥感领域：多光谱或SAR数据的特征对比，分析不同地物在多个波段或极化通道的反射特性
 - 机器学习：模型性能的多指标评估（精度、召回率、F1分数、训练时间等）
 
-## 使用方法
+## 在线使用
 
-1. 安装依赖：`pip install -r requirements.txt`
-2. 运行应用：`streamlit run 雷达图_streamlit.py`
-3. 上传CSV数据或使用默认数据进行可视化
-4. 调整参数设置，自定义雷达图样式
-5. 保存图表到本地
+访问[Streamlit Cloud](https://share.streamlit.io/)上的应用（部署后更新链接）
+
+## 本地运行
+
+1. 克隆仓库：`git clone https://github.com/daiguitao/radar-chart-visualization.git`
+2. 安装依赖：`pip install -r requirements.txt`
+3. 运行应用：`streamlit run 雷达图_streamlit.py`
 
 ## 数据格式
 
 上传的CSV文件应包含以下格式：
 - 第一列：组别名称
 - 其余列：各项指标数值
+
+## 示例数据
+
+| 组别 | 指标A | 指标B | 指标C | 指标D | 指标E |
+|------|-------|-------|-------|-------|-------|
+| 组别1 | 4 | 4 | 5 | 4 | 3 |
+| 组别2 | 5 | 5 | 4 | 5 | 2 |
+| 组别3 | 3 | 4 | 5 | 3 | 5 |
